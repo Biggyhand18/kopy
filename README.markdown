@@ -8,7 +8,7 @@ KoPy (Korean Python)
 - pip install kopy
 
 사용방법
-```{.python}
+```python
 from kopy import KoPy
 kp = KoPy
 kp.pos('안녕하세요!')
