@@ -29,7 +29,7 @@ setup(
     long_description="There are already several analyzers, But In python. There're some problems to use analyzer with python applicaion. Hope KoPy makes it easier",
 
     url='https://github.com/biggydog/kopy',
-
+    download_url = 'https://github.com/BiggyDog/kopy/archive/v1.0.tar.gz',
 
     author='BeomSeok Lee(BiggyDog)',
     author_email='bums00084@gmail.com',
