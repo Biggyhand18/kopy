@@ -23,13 +23,13 @@ setup(
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
-    version='1.3',
+    version='1.4',
 
     description='A Pure Python Korean Analyzer',
     long_description="There are already several analyzers, But In python. There're some problems to use analyzer with python applicaion. Hope KoPy makes it easier",
 
     url='https://github.com/biggydog/kopy',
-    download_url = 'https://github.com/BiggyDog/kopy/archive/v1.2.tar.gz',
+    download_url = 'https://github.com/BiggyDog/kopy/archive/v1.4.tar.gz',
 
     author='BeomSeok Lee(BiggyDog)',
     author_email='bums00084@gmail.com',

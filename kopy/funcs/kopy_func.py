@@ -103,9 +103,9 @@ class KoPy_func():
             for i in phrase:
                 patterns.extend(self.makePatterns(i))
             patterns = self.checkPossible(patterns)
+            print(patterns)
             comp = list()
             extra = list()
-
             if cont == []:
                 for pattern in patterns:
                     results,right = self.putTags(pattern)
@@ -275,6 +275,21 @@ class KoPy_func():
             for i in range(1,len(splited)):
                 if not self.getback(splited[i-1],splited[i]):
                     possible = False
+                    if 'V' in ''.join(self.getData(splitK(splited[i-1]),True).keys()):
+                        if 'E' in ''.join(self.getData(splitK(splited[i]),True).keys()):
+                            if splitK(splited[i-1])[-1] in jaum_list:
+                                jung = splitK(splited[i-1])[-2]
+                            else:jung = splitK(splited[i-1])[-1]
+                            if jung in ['ㅓ','ㅜ','ㅡ','ㅣ']:
+                                jung = 'ㅇㅓ'
+                            elif jung in ['ㅏ','ㅗ']:
+                                jung = 'ㅇㅏ'
+                            print(jung)
+                            if self.getback(splited[i-1],joinK(jung)+splited[i]):
+                                print('okay')
+                                pos = pos.replace(splitK(splited[i]),jung+splitK(splited[i]),1)
+                                print(pos)
+                                possible = True
             if possible == True:
                 bigram.append(pos)
         if bigram == []:
