@@ -43,7 +43,8 @@ setup(
         # Indicate who your project is intended for
         'Intended Audience :: Developers',
         'Topic :: Software Development :: Build Tools',
-        'Operating System :: MacOS :: MacOS X',
+        'Operating System :: MacOS',
+        'Operating System :: POSIX :: Linux',
 
         # Pick your license as you wish (should match "license" above)
         'License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)',
