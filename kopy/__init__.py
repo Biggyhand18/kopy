@@ -4,4 +4,4 @@ except:
     from kopy import KoPy
 
 __all__ = ['KoPy']
-__version__ = '1.0'
+__version__ = '1.3'

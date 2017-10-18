@@ -18,10 +18,16 @@ except:
 	jong_before = [unichr(i) for i in range(4520, 4547)]
 
 def getfilePath(*name):
-	if name:
-		return str(os.path.realpath(__file__).rsplit('/',1)[0]) + "/" + name[0]
+	if os.name == 'nt':
+		if name:
+			return str(os.path.realpath(__file__).rsplit('\\', 1)[0]) + "\\" + name[0]
+		else:
+			return str(os.path.realpath(__file__).rsplit('\\', 1)[0])
 	else:
-		return str(os.path.realpath(__file__).rsplit('/',1)[0])
+		if name:
+			return str(os.path.realpath(__file__).rsplit('/',1)[0]) + "/" + name[0]
+		else:
+			return str(os.path.realpath(__file__).rsplit('/',1)[0])
 
 def isHangul(ch):
 	return ord(ch) >= jamo_start and ord(ch) <= jamo_end
