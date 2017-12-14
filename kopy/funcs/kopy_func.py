@@ -103,7 +103,6 @@ class KoPy_func():
             for i in phrase:
                 patterns.extend(self.makePatterns(i))
             patterns = self.checkPossible(patterns)
-            print(patterns)
             comp = list()
             extra = list()
             if cont == []:
@@ -284,11 +283,8 @@ class KoPy_func():
                                 jung = 'ㅇㅓ'
                             elif jung in ['ㅏ','ㅗ']:
                                 jung = 'ㅇㅏ'
-                            print(jung)
                             if self.getback(splited[i-1],joinK(jung)+splited[i]):
-                                print('okay')
                                 pos = pos.replace(splitK(splited[i]),jung+splitK(splited[i]),1)
-                                print(pos)
                                 possible = True
             if possible == True:
                 bigram.append(pos)
