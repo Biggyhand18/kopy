@@ -1,4 +1,3 @@
-setup.cfg
 setup.py
 kopy/__init__.py
 kopy/kopy.py
@@ -12,8 +11,8 @@ kopy/funcs/__init__.py
 kopy/funcs/kopy_func.py
 kopy/funcs/utils.py
 kopy/funcs/database/bigram.json
-kopy/funcs/database/posBigram.json
 kopy/funcs/database/posFreq.json
 kopy/funcs/database/posList.json
+kopy/funcs/database/posbigram.json
 kopy/funcs/database/tagFreq.json
 kopy/funcs/database/verbchange.json
