@@ -11,7 +11,7 @@ KoPy (Korean Python)
 ##### python 3
 ```python
 from kopy import KoPy
-kp = KoPy
+kp = KoPy()
 kp.pos('안녕하세요!')
   [('안녕', 'NNG'), ('하', 'XSA'), ('세요', 'EF'), ('!', 'SF')]
 kp.sentence('안녕하세요! 반갑습니다.')
@@ -20,7 +20,7 @@ kp.sentence('안녕하세요! 반갑습니다.')
 ##### python 2
 ```python
 from kopy import KoPy
-kp = KoPy
+kp = KoPy()
 kp.pos('안녕하세요!')
   [(u'\uc548\ub155', u'NNG'), (u'\ud558', u'XSA'), (u'\uc138\uc694', u'EF'), (u'!', u'SF')]
 kp.pos('안녕하세요!',1)
